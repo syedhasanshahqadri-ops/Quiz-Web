@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online MCQ Test</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="start-container">
+
+        <div class="start-card">
+
+            <div class="logo">📝</div>
+
+            <h1>Online MCQ Test</h1>
+
+            <p class="subtitle">
+                Test your knowledge with 20 multiple-choice questions.
+            </p>
+
+            <div class="test-info">
+                <div>
+                    <strong>20</strong>
+                    <span>Questions</span>
+                </div>
+
+                <div>
+                    <strong>30</strong>
+                    <span>Minutes</span>
+                </div>
+
+                <div>
+                    <strong>100%</strong>
+                    <span>Score</span>
+                </div>
+            </div>
+
+            <form id="studentForm">
+
+                <div class="input-group">
+                    <label for="studentName">Student Name</label>
+
+                    <input
+                        type="text"
+                        id="studentName"
+                        placeholder="Enter your name"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="rollNumber">Roll Number</label>
+
+                    <input
+                        type="text"
+                        id="rollNumber"
+                        placeholder="Enter your roll number"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="start-btn">
+                    Start Test →
+                </button>
+
+            </form>
+
+            <p class="notice">
+                ⏱️ You will have 30 minutes to complete the test.
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

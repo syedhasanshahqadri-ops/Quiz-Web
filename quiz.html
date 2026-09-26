@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MCQ Test</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="quiz-header">
+
+        <div class="quiz-title">
+            <h2>📝 Online MCQ Test</h2>
+        </div>
+
+        <div class="timer-box">
+            ⏱️ Time Left:
+            <span id="timer">30:00</span>
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main class="quiz-container">
+
+        <div class="student-bar">
+
+            <div>
+                <span>Student:</span>
+                <strong id="displayName"></strong>
+            </div>
+
+            <div>
+                <span>Roll No:</span>
+                <strong id="displayRoll"></strong>
+            </div>
+
+        </div>
+
+
+        <div class="progress-container">
+
+            <div class="progress-info">
+                <span>Test Progress</span>
+
+                <span>
+                    <span id="answeredCount">0</span>/20 Answered
+                </span>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 1 -->
+
+        <div class="question-card" data-answer="B">
+
+            <div class="question-number">
+                Question 1 of 20
+            </div>
+
+            <h3>
+                What does HTML stand for?
+            </h3>
+
+            <div class="options">
+
+                <button class="option" data-option="A">
+                    A. Hyper Trainer Marking Language
+                </button>
+
+                <button class="option" data-option="B">
+                    B. Hyper Text Markup Language
+                </button>
+
+                <button class="option" data-option="C">
+                    C. High Text Machine Language
+                </button>
+
+                <button class="option" data-option="D">
+                    D. Hyperlink Text Management Language
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 2 -->
+
+        <div class="question-card" data-answer="C">
+
+            <div class="question-number">
+                Question 2 of 20
+            </div>
+
+            <h3>
+                Which language is used to style a web page?
+            </h3>
+
+            <div class="options">
+
+                <button class="option" data-option="A">
+                    A. HTML
+                </button>
+
+                <button class="option" data-option="B">
+                    B. Python
+                </button>
+
+                <button class="option" data-option="C">
+                    C. CSS
+                </button>
+
+                <button class="option" data-option="D">
+                    D. SQL
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 3 -->
+
+        <div class="question-card" data-answer="A">
+
+            <div class="question-number">
+                Question 3 of 20
+            </div>
+
+            <h3>
+                Which language is mainly used to add interactivity to websites?
+            </h3>
+
+            <div class="options">
+
+                <button class="option" data-option="A">
+                    A. JavaScript
+                </button>
+
+                <button class="option" data-option="B">
+                    B. HTML
+                </button>
+
+                <button class="option" data-option="C">
+                    C. CSS
+                </button>
+
+                <button class="option" data-option="D">
+                    D. XML
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 4 -->
+
+        <div class="question-card" data-answer="D">
+
+            <div class="question-number">
+                Question 4 of 20
+            </div>
+
+            <h3>
+                Which of these is an operating system?
+            </h3>
+
+            <div class="options">
+
+                <button class="option" data-option="A">
+                    A. Google
+                </button>
+
+                <button class="option" data-option="B">
+                    B. Chrome
+                </button>
+
+                <button class="option" data-option="C">
+                    C. Python
+                </button>
+
+                <button class="option" data-option="D">
+                    D. Windows
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 5 -->
+
+        <div class="question-card" data-answer="B">
+
+            <div class="question-number">
+                Question 5 of 20
+            </div>
+
+            <h3>
+                What is the brain of a computer called?
+            </h3>
+
+            <div class="options">
+
+                <button class="option" data-option="A">
+                    A. RAM
+                </button>
+
+                <button class="option" data-option="B">
+                    B. CPU
+                </button>
+
+                <button class="option" data-option="C">
+                    C. Hard Disk
+                </button>
+
+                <button class="option" data-option="D">
+                    D. Monitor
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 6 -->
+
+        <div class="question-card" data-answer="C">
+
+            <div class="question-number">
+                Question 6 of 20
+            </div>
+
+            <h3>
+                Which device is used to enter text into a computer?
+            </h3>
+
+            <div class="options">
+
+                <button class="option" data-option="A">
+                    A. Monitor
+                </button>
+
+                <button class="option" data-option="B">
+                    B. Printer
+                </button>
+
+                <button class="option" data-option="C">
+                    C. Keyboard
+                </button>
+
+                <button class="option" data-option="D">
+                    D. Speaker
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 7 -->
+
+        <div class="question-card" data-answer="A">
+
+            <div class="question-number">
+                Question 7 of 20
+            </div>
+
+            <h3>
+                Which storage device has no moving parts?
+            </h3>
+
+            <div class="options">
+
+                <button class="option" data-option="A">
+                    A. SSD
+                </button>
+
+                <button class="option" data-option="B">
+                    B. HDD
+                </button>
+
+                <button class="option" data-option="C">
+                    C. DVD
+                </button>
+
+                <button class="option" data-option="D">
+                    D. Floppy Disk
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 8 -->
+
+        <div class="question-card" data-answer="D">
+
+            <div class="question-number">
+                Question 8 of 20
+            </div>
+
+            <h3>
+                Which one is a programming language?
+            </h3>
+
+            <div class="options">
+
+                <button class="option" data-option="A">
+                    A. Windows
+                </button>
+
+                <button class="option" data-option="B">
+                    B. Google
+                </button>
+
+                <button class="option" data-option="C">
+                    C. YouTube
+                </button>
+
+                <button class="option" data-option="D">
+                    D. Python
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 9 -->
+
+        <div class="question-card" data-answer="B">
+
+            <div class="question-number">
+                Question 9 of 20
+            </div>
+
+            <h3>
+                What does CPU stand for?
+            </h3>
+
+            <div class="options">
+
+                <button class="option" data-option="A">
+                    A. Computer Processing User
+                </button>
+
+                <button class="option" data-option="B">
+                    B. Central Processing Unit
+                </button>
+
+                <button class="option" data-option="C">
+                    C. Central Program Utility
+                </button>
+
+                <button class="option" data-option="D">
+                    D. Computer Program Unit
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 10 -->
+
+        <div class="question-card" data-answer="C">
+
+            <div class="question-number">
+                Question 10 of 20
+            </div>
+
+            <h3>
+                Which company developed the Windows operating system?
+            </h3>
+
+            <div class="options">
+
+                <button class="option" data-option="A">
+                    A. Apple
+                </button>
+
+                <button class="option" data-option="B">
+                    B. Google
+                </button>
+
+                <button class="option" data-option="C">
+                    C. Microsoft
+                </button>
+
+                <button class="option" data-option="D">
+                    D. IBM
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 11 -->
+
+        <div class="question-card" data-answer="A">
+
+            <div class="question-number">
+                Question 11 of 20
+            </div>
+
+            <h3>
+                Which symbol is used for an ID selector in CSS?
+            </h3>
+
+            <div class="options">
+
+                <button class="option" data-option="A">
+                    A. #
+                </button>
+
+                <button class="option" data-option="B">
+                    B. .
+                </button>
+
+                <button class="option" data-option="C">
+                    C. *
+                </button>
+
+                <button class="option" data-option="D">
+                    D. @
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 12 -->
+
+        <div class="question-card" data-answer="D">
+
+            <div class="question-number">
+                Question 12 of 20
+            </div>
+
+            <h3>
+                Which symbol is used for a class selector in CSS?
+            </h3>
+
+            <div class="options">
+
+                <button class="option" data-option="A">
+                    A. #
+                </button>
+
+                <button class="option" data-option="B">
+                    B. @
+                </button>
+
+                <button class="option" data-option="C">
+                    C. $
+                </button>
+
+                <button class="option" data-option="D">
+                    D. .
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 13 -->
+
+        <div class="question-card" data-answer="B">
+
+            <div class="question-number">
+                Question 13 of 20
+            </div>
+
+            <h3>
+                Which HTML tag is used to create a paragraph?
+            </h3>
+
+            <div class="options">
+
+                <button class="option" data-option="A">
+                    A. &lt;h1&gt;
+                </button>
+
+                <button class="option" data-option="B">
+                    B. &lt;p&gt;
+                </button>
+
+                <button class="option" data-option="C">
+                    C. &lt;div&gt;
+                </button>
+
+                <button class="option" data-option="D">
+                    D. &lt;br&gt;
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 14 -->
+
+        <div class="question-card" data-answer="C">
+
+            <div class="question-number">
+                Question 14 of 20
+            </div>
+
+            <h3>
+                Which HTML tag is used to create a hyperlink?
+            </h3>
+
+            <div class="options">
+
+                <button class="option" data-option="A">
+                    A. &lt;link&gt;
+                </button>
+
+                <button class="option" data-option="B">
+                    B. &lt;url&gt;
+                </button>
+
+                <button class="option" data-option="C">
+                    C. &lt;a&gt;
+                </button>
+
+                <button class="option" data-option="D">
+                    D. &lt;href&gt;
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 15 -->
+
+        <div class="question-card" data-answer="A">
+
+            <div class="question-number">
+                Question 15 of 20
+            </div>
+
+            <h3>
+                Which protocol is commonly used for secure websites?
+            </h3>
+
+            <div class="options">
+
+                <button class="option" data-option="A">
+                    A. HTTPS
+                </button>
+
+                <button class="option" data-option="B">
+                    B. FTP
+                </button>
+
+                <button class="option" data-option="C">
+                    C. SMTP
+                </button>
+
+                <button class="option" data-option="D">
+                    D. USB
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 16 -->
+
+        <div class="question-card" data-answer="D">
+
+            <div class="question-number">
+                Question 16 of 20
+            </div>
+
+            <h3>
+                What does RAM stand for?
+            </h3>
+
+            <div class="options">
+
+                <button class="option" data-option="A">
+                    A. Read Access Memory
+                </button>
+
+                <button class="option" data-option="B">
+                    B. Random Application Machine
+                </button>
+
+                <button class="option" data-option="C">
+                    C. Read Application Memory
+                </button>
+
+                <button class="option" data-option="D">
+                    D. Random Access Memory
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 17 -->
+
+        <div class="question-card" data-answer="B">
+
+            <div class="question-number">
+                Question 17 of 20
+            </div>
+
+            <h3>
+                Which one is a web browser?
+            </h3>
+
+            <div class="options">
+
+                <button class="option" data-option="A">
+                    A. Windows
+                </button>
+
+                <button class="option" data-option="B">
+                    B. Chrome
+                </button>
+
+                <button class="option" data-option="C">
+                    C. Python
+                </button>
+
+                <button class="option" data-option="D">
+                    D. Linux
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 18 -->
+
+        <div class="question-card" data-answer="C">
+
+            <div class="question-number">
+                Question 18 of 20
+            </div>
+
+            <h3>
+                Which database language is commonly used to manage data?
+            </h3>
+
+            <div class="options">
+
+                <button class="option" data-option="A">
+                    A. CSS
+                </button>
+
+                <button class="option" data-option="B">
+                    B. HTML
+                </button>
+
+                <button class="option" data-option="C">
+                    C. SQL
+                </button>
+
+                <button class="option" data-option="D">
+                    D. JPG
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 19 -->
+
+        <div class="question-card" data-answer="A">
+
+            <div class="question-number">
+                Question 19 of 20
+            </div>
+
+            <h3>
+                Which number system uses only 0 and 1?
+            </h3>
+
+            <div class="options">
+
+                <button class="option" data-option="A">
+                    A. Binary
+                </button>
+
+                <button class="option" data-option="B">
+                    B. Decimal
+                </button>
+
+                <button class="option" data-option="C">
+                    C. Octal
+                </button>
+
+                <button class="option" data-option="D">
+                    D. Hexadecimal
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 20 -->
+
+        <div class="question-card" data-answer="D">
+
+            <div class="question-number">
+                Question 20 of 20
+            </div>
+
+            <h3>
+                Which of these is an example of cloud storage?
+            </h3>
+
+            <div class="options">
+
+                <button class="option" data-option="A">
+                    A. Keyboard
+                </button>
+
+                <button class="option" data-option="B">
+                    B. Monitor
+                </button>
+
+                <button class="option" data-option="C">
+                    C. CPU
+                </button>
+
+                <button class="option" data-option="D">
+                    D. Google Drive
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- SUBMIT -->
+
+        <div class="submit-area">
+
+            <button id="submitBtn" class="submit-btn">
+                Submit Test
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
