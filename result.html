@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test Result</title>
+<script>document.documentElement.dataset.theme=localStorage.getItem("qz_theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light")</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="result">
+<button class="theme-fab" id="themeBtn" aria-label="Switch light or dark theme">◐</button>
+<main class="rwrap">
+  <div class="rcard">
+    <p class="eyebrow">TEST COMPLETED</p>
+    <h1 id="grade"></h1>
+    <p class="muted" id="msg">Here is your final result.</p>
+    <div class="who2"><div><span>Name</span><b id="resultName"></b></div><div><span>Roll number</span><b id="resultRoll"></b></div></div>
+    <div class="ring"><svg viewBox="0 0 120 120" aria-hidden="true"><circle class="rb" cx="60" cy="60" r="52"/><circle class="rf" id="rf" cx="60" cy="60" r="52"/></svg><div class="rin"><b id="percentage">0%</b><span id="finalScore">0 / 30</span></div></div>
+    <div class="stats4">
+      <div><b id="correctAnswers">0</b><span>Correct</span></div>
+      <div><b id="wrongAnswers">0</b><span>Wrong</span></div>
+      <div><b id="unanswered">0</b><span>Unanswered</span></div>
+      <div><b id="timeUsed">00:00</b><span>Time used</span></div>
+    </div>
+    <h3>Subject-wise result</h3>
+    <div id="subjects"></div>
+    <p class="note" id="saveNote"></p>
+    <div class="acts"><button class="btn" id="dl">Download result image</button><a class="btn ghost" href="index.html">Take test again</a></div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 9-10 Knowledge Test</title>
+<script>document.documentElement.dataset.theme=localStorage.getItem("qz_theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light")</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="index">
+<button class="theme-fab" id="themeBtn" aria-label="Switch light or dark theme">◐</button>
+<main class="split">
+  <section class="hero">
+    <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+    <div class="hero-in">
+      <p class="eyebrow">CLASS 9 · 10 PRACTICE TEST</p>
+      <h1>Test your knowledge.<br><em>Beat the clock.</em></h1>
+      <p class="lead">Thirty multiple-choice questions across six subjects. Answer at your own pace, change your mind any time, and see your full result at the end.</p>
+      <ul class="subs"><li>History</li><li>Maths</li><li>Chemistry</li><li>Physics</li><li>Pakistan Studies</li><li>Social Studies</li></ul>
+      <div class="facts"><div><b>30</b><span>Questions</span></div><div><b>30</b><span>Minutes</span></div><div><b>6</b><span>Subjects</span></div></div>
+    </div>
+  </section>
+  <section class="panel">
+    <div class="card">
+      <h2>Start the test</h2>
+      <p class="muted">Enter your details to begin.</p>
+      <form id="studentForm">
+        <div class="input-group"><label for="studentName">Student Name</label><input type="text" id="studentName" placeholder="Enter your name" autocomplete="name" required></div>
+        <div class="input-group"><label for="rollNumber">Roll Number</label><input type="text" id="rollNumber" placeholder="Enter your roll number" required></div>
+        <button type="submit" class="btn full">Start Test →</button>
+      </form>
+      <p class="note">You will have 30 minutes. The timer starts when you press Start.</p>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MCQ Test</title>
+<script>document.documentElement.dataset.theme=localStorage.getItem("qz_theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light")</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="quiz">
+<header class="qhead">
+  <div class="qrow">
+    <div class="brand"><span class="dot"></span>Knowledge Test</div>
+    <div class="who"><b id="displayName"></b><span>Roll <b id="displayRoll"></b></span></div>
+    <div class="qright"><div class="timer" id="timerBox"><span>Time left</span><b id="timer">30:00</b></div><button class="ib" id="themeBtn" aria-label="Switch light or dark theme">◐</button></div>
+  </div>
+  <div class="pbar"><i id="bar"></i></div>
+</header>
+<main class="qmain">
+  <section class="qcard">
+    <div class="qmeta"><span class="chip" id="qSub"></span><span id="qNum"></span></div>
+    <h2 id="qText"></h2>
+    <div class="opts" id="opts"></div>
+    <div class="qnav"><button class="btn ghost" id="prev">← Previous</button><button class="btn quiet" id="clear">Clear answer</button><button class="btn" id="next">Next →</button></div>
+  </section>
+  <aside class="side">
+    <h3>Questions</h3>
+    <div class="pal" id="pal"></div>
+    <div class="legend"><span><i class="k on"></i>Answered</span><span><i class="k"></i>Not answered</span><span><i class="k cur"></i>Current</span></div>
+    <p class="count"><b id="answeredCount">0</b> of 30 answered</p>
+    <button class="btn full" id="submitBtn">Submit test</button>
+  </aside>
+</main>
+<div class="modal" id="modal" hidden>
+  <div class="mback" data-x></div>
+  <div class="mcard" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <h2 id="mTitle">Submit your test?</h2>
+    <p id="mText"></p>
+    <div class="mbtn"><button class="btn ghost" data-x>Keep answering</button><button class="btn" id="confirmBtn">Submit now</button></div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="questions.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
